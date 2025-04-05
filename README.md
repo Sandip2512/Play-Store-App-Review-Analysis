@@ -3,7 +3,10 @@
 
 
 [![AlmaBetter](https://img.shields.io/badge/Verified-AlmaBetter-blue)](https://www.almabetter.com/courses/full-stack-data-science)
-![Google Play](google-play.gif)
+<p align="center">
+  <img src="https://github.com/Sandip2512/Play-Store-App-Review-Analysis/blob/main/google%20play.gif?raw=true" alt="Google Play Logo" width="300"/>
+</p>
+
 
 
 ## 📋 Abstract
