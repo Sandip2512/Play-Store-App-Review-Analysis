@@ -3,7 +3,7 @@
 
 
 [![AlmaBetter](https://img.shields.io/badge/Verified-AlmaBetter-blue)](https://www.almabetter.com/courses/full-stack-data-science)
-![image](https://github.com/user-attachments/assets/649114af-1aab-4f64-9f3b-df0428e4eae8)
+![Google Play](google-play.gif)
 
 
 ## 📋 Abstract
