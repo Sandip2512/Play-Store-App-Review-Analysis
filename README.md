@@ -1,7 +1,8 @@
 # Play-Store-App-Review-Analysis
 
 AlmaBetter Verfied Project - AlmaBetter
-Animated gif
+![image](https://github.com/user-attachments/assets/649114af-1aab-4f64-9f3b-df0428e4eae8)
+
 
 -----------------------------------------------------
 
