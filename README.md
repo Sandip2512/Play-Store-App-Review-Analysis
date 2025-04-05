@@ -1,32 +1,31 @@
 # Play-Store-App-Review-Analysis
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-AlmaBetter Verfied Project - AlmaBetter
+
+[![AlmaBetter](https://img.shields.io/badge/Verified-AlmaBetter-blue)](https://www.almabetter.com/courses/full-stack-data-science)
 ![image](https://github.com/user-attachments/assets/649114af-1aab-4f64-9f3b-df0428e4eae8)
 
 
------------------------------------------------------
+## 📋 Abstract
+This project presents an Exploratory Data Analysis (EDA) of Google Play Store apps and user reviews to understand key trends, user preferences, and app performance. The primary goal is to analyze the available app metadata and user sentiment to provide actionable insights for developers. The study addresses challenges like data inconsistencies, missing values, and limited overlap between datasets. Despite these, valuable patterns were uncovered, such as the dominance of free apps, popular categories, and user behavior around app size and ratings. This analysis lays a foundation for developers to make informed decisions when designing, pricing, and positioning apps in a highly competitive market.
 
-📋 Abstract
-A few thousands of new applications are regularly uploaded on Google play store. A huge number of designers working freely on designing the apps and making them successful. With the enormous challenge from everywhere throughout the globe, it is important for a developer to know whether he/she is continuing the correct way or not. Since most Play Store applications are free, the income model is very obscure and inaccessible regarding how the in-application buys, in-application adverts and memberships add to the achievement of an application. In this way, an application's prosperity is normally dictated by the quantity of installation of the application and the client appraisals that it has gotten over its lifetime instead of the income is created. The objective of this experiment is to deliver insights to understand customer demands better and thus help developers to popularize the product. We have tried to discover the relationships among various attributes such as which application is free or paid, what are the user reviews, rating of the application. -----------------------------------------------------
 
-💾 Project Files Description
-This Project includes 1 colab notebook, 1 technical documentation as well as 1 presentation:
+## 💾 Project Files Description
+This Project includes 1 colab notebook
 
 Executable Files:
 Play Store App Review Analysis - Includes all functions required for clustering operations.
 Output:
 Google Colab - All the outputs are visible in the provided colab notebook.
 Input Files:
-Play Store Data.csv - It contains the basic details of the app like number of user reviews, ratings, etc.
-User Reviews.csv - It contains the user reviews and its sentiment score for the respective app.
+Play Store.csv - It contains the basic details of the app like number of user reviews, ratings, etc.
+Reviews.csv - It contains the user reviews and its sentiment score for the respective app.
 Data Source:
 Dataset - Dataset taken from Almabetter
 -----------------------------------------------------
 
-📖 Introduction:
-In today’s scenario we can see that mobile apps playing an important role in any individual’s life. With enormous challenge from everywhere throughout the globe, it is important for a designer to realize that he/she is continuing in the right way or not. To hold this income and their place in the market the application designers may need to figure out how to stick into their present position. The dataset with 10k Play Store applications is available to analyze the market of android. It can be examined to analysis the different category such as family, communication,entertainment, tools, music, camera etc. In this project we examine the different attributes present in the data set that affect the popularity of the application. We focused on to answer the questions like, what makes an app popular, what should be the price and size of the app, is there some trends in user sentiments. In our data set we have two csv files for data analysis: Play Store data User Reviews At first, we analysis the play store data and in the play store data we have 10841 rows and 13 columns & in the user review data we have 64295 rows and 5 columns of data. We have to take the maximum outcomes from the data which help us to analysis the which type of app is most preferable and comparisons between different insights. Our goal is to filter and make plots accordingly for a better EDA with respect to the final data. We need to explore and analyze the data to discover key factors responsible for app engagement and success.
-
------------------------------------------------------
+## 📖 Introduction:
+Google Play Store hosts millions of Android applications across diverse categories. With user reviews, install counts, and app attributes readily available, it becomes essential to analyze this data to gain meaningful insights into user behavior and app performance. This project focuses on performing EDA to identify trends in app ratings, categories, sizes, and user feedback, all of which help developers better understand the market landscape.
 
 The contents of Play Store Data are:
 App: It contains the name of the app with a short description (optional).
@@ -50,103 +49,100 @@ Sentiment_Polarity: It gives the polarity of the review. Its range is [-1,1], wh
 Sentiment_Subjectivity: This value gives how close a reviewer’s opinion is to the opinion of the general public. Its range is [0,1]. Higher the subjectivity, closer is the reviewer’s opinion to the opinion of the general public, and lower subjectivity indicates the review is more of a factual information.
 -----------------------------------------------------
 
-📋Problem Statements
-What are the top categories on Play Store?
-Are majority of the apps Paid or Free?
-How importance is the rating of the application?
-Which categories from the audience should the app be based on?
-Which category has the most no. of installations?
-How does the count of apps varies by Genres?
-How does the last update has an effect on the rating?
-How are ratings affected when the app is a paid one?
-How are reviews and ratings co-related?
-Lets us discuss the sentiment subjectivity.
-Is subjectivity and polarity proportional to each other?
-What is the percentage of review sentiments?
-How is sentiment polarity varying for paid and free apps?
-How Content Rating affect over the App?
-Does Last Update date has an effects on rating?
-Distribution of App update over the Year.
-Distribution of Paid and Free app updated over the Month.
-📔 What is Exploratory Data Analysis?
+## 📋Problem Statements
+Understanding app success in the Play Store depends on various factors such as app type, size, pricing, category, and user sentiment. The unstructured nature of reviews and inconsistencies in metadata present challenges for analysis. The objective is to clean, explore, and visualize this data to uncover trends, highlight issues, and identify potential areas for app development.
+
+## 📔 What is Exploratory Data Analysis?
 Exploratory data analysis (EDA) is used by data scientists to analyze and investigate data sets for patterns, and anomalies (outliers), and form hypotheses based on our understanding of the dataset and summarize their main characteristics, often employing data visualization methods. It is an important step in any Data Analysis or Data Science project. It helps determine how best to manipulate data sources to get the answers you need.
 
 EDA involves generating summary statistics for numerical data in the dataset and creating various graphical representations to understand the data better and make it more attractive and appealing.
 
 The following are the various steps involved in the EDA process:
 
-Problem Statement - We shall brainstorm and understand the given data set. We shall study the attributes present in it and try to do a philosophical analysis about their meaning and importance for this problem.
-Hypothesis - Upon studying the attributes present in the data base, we shall develop some basic hypothesis on which we can work and play with the data to look for the varied results which we can get out of it.
-Univariate Analysis - It is the simplest form of analyzing the data. In this we would initially pick up a single attribute and study it in and out. It doesn't deal with any sort of co-relation and it's major purpose is to describe. It takes data, summarizes that data and finds patterns in the data.
-Bivariate Analysis - This analysis is related to cause and the relationship between the two attributes. We will try to understand the dependency of attributes on each other.
-Multivariate Analysis - This is done when more than two variables have to be analyzed simultaneously.
-Data Cleaning - We shall clean the dataset and handle the missing data, outliers and categorical variables.
-Testing Hypothesis - We shall check if our data meets the assumptions required by most of the multivariate techniques.
------------------------------------------------------
+## ✅ Steps Involved in the Project:
+Understanding the Problem Statement
+Defined the goal: to analyze Play Store app data and user reviews for insights into app success and user sentiment.
 
-📖 Steps Involved
-After loading the dataset, we can start the exploration but before that, we need to check and see that the dataset is ready for performing several exploration operations or not, so let’s first have a look at the structure and the manner in which the data is organized.
+Importing Libraries and Data
+Used libraries like Pandas, NumPy, Matplotlib, and Seaborn. Loaded two datasets:
+
+Play Store Apps Data
+
+User Reviews Data
 
 Data Cleaning
-Our data set contains a large number of null values in the rating column, so we drop them. Some of the columns have a smaller number of null values, so we replace the null values in these columns with the mode value of that particular column. Our data set also contain the duplicate rows for a single application. We also drop the duplicate rows because the rows contain the identical data. Also drop the rows, which have rating greater than 5.
 
-Data Transforming
-From the information of data frame, we can see that all the columns except rating have the object data type but some of the columns like, reviews, size, installs and price have the numerical value. So, we have to transform them in proper data type and also remove the unwanted values from the numerical columns like ‘+’ and ‘,’ from installs and ‘$’ from price. In the size column we have some values in KB and some values in MB, so we transform all the values in MB.
+Removed duplicates and irrelevant columns
 
-Exploratory Data Analysis
-After establishing a good sense of each feature, we proceeded with plotting a pairwise plot between all the quantitative variables to look for any evident patterns or relationships between the features. There is a high variance in the number of installs and in number of reviews. To overcome this problem, we add two new columns to the data frame named: log_installs and log_review, which contain the logarithmic values of installs and review columns, respectively.
+Handled missing values (e.g., dropped 13.6% NaN reviews)
 
-Single Variate Analysis
-After that we analysis all the columns one by one to examine whether the particular column contain some useful information or not:
+Standardized data types (e.g., numerical conversions, removing “+”, “M”, “$”)
 
-Category
-We breakdown the apps by category and observe that family and game categories have the maximum number of apps in the play store. Weather, house and home, comics, events, beauty, and parenting are the categories which have a few numbers of apps.
+Data Merging
 
-Data wrangling
-Apart from this, two new columns were added to the main data frame, namely, “Rating Group”, and “Revenue”. This is done to improve simplify the analysis and come up with different meaningful visualizations
+Merged both datasets on the ‘App’ column
 
-Rating Group: This column groups the apps based on the average user rating. (4-5: Top rated, 3-4: Above average, 2-3: Average, 1-2: Below average).
-Revenue: This column gives the revenue generated by the app through app installs alone. By doing these operations on the original dataset, we are ready with the data pipeline, and data visualizations can be done on it. All the apps in play store have the rating between 0.5 to 5. Maximum apps have the rating between 3.8 to 4.5.
-Installs
-We analysis the install column to observe the effect of size, price, rating, content rating, android version on app installation number. We can analysis that for each and every category number of app installation does not depend on the size. The free apps installed mostly. The apps which can be used by everyone is more installed than the apps which can be used by a particular age group. Rating of mostly installed apps is between 4 and 5.
+Only 816 apps were common between both datasets
 
-🛠 Challenges Faced:
-Reading the dataset and comprehending the problem statement. Our major challenge was data cleaning.
-Handling the error, duplicate and NaN values in the dataset.
-13.60% of reviews were NaN values, and even after merging both the dataframes, we could not infer much in order to fill them. Thus we had to drop them.
-The merged data frame of both play store and user reviews, had only 816 common apps. This is just 10% of the cleaned data, we could have given more valuable analysis, if we had atleast 70% - 80% of the data available in the merged dataframes.
-User Reviews had 42% of NaN values, which could have been used for developing an understanding of the category wise sentiments, which would help us to fill 13.60% NaN values of the Reviews column.
-There is so much more which can be explored. Like we have current version, android version available which can be explored in detail and we can come out with more analysis where we can tell how does these things effect and needs to be kept in mind while developing app for the users.
-We can explore the correlation between the size of the app and the version of Android on the number of installs.
-Machine learning can help us to deploy more insights by developing models which can help us interpret even more better. We have left this as future work as this is something where we can work on.
-Designing multiple visualizations to summarize the information in the dataset and successfully communicate the results and trends to the reader.
-📋 Conclusion:
-Most of the apps are free so developers should focus on creating free apps to have a huge customer base. If developing paid apps then apps size should not be greater than 40mb. More Apps should be in the category like Events,Beauty,Parenting as they have not been explored much but still quite popular with huge installations. In order to retain the customer base apps should be updated regularly Developers should develop apps such that their content is available for everyone. Bulky apps should be developed in the category like Game, Family. If developing paid apps then its price should not be high and size should be less than 20mb. Apps belonging to Game and Family Category have high negative reviews therefore they should be developed carefully. Like this there can be a lot of conclusions but we have tried to cover the most important ones. These are some of the aspects that the developer should research before proceeding with the app development. By conducting a simple exploratory data analysis (EDA) on the play store dataset, we not only eliminate avoidable risks of failure, but we may also be able to provide better ideas for building the app.
+Exploratory Data Analysis (EDA)
 
-Percentage of free apps = ~92%
-Percentage of apps with no age restrictions = ~82%
-Most competitive category: Family
-Category with the highest number of installs: Game
-Category with the highest average app installs: Communication
-Percentage of apps that are top rated = ~80%
-There are 20 free apps that have been installed over a billion times
-Minecraft is the only app in the paid category with over 10M installs. This app has also produced the most revenue only from the installation fee.
-Category in which the paid apps have the highest average installation fee: Finance
-Most popular app in the Play Store based on the number of reviews: Facebook
-The median size of all apps in the play store is 12 MB.
-The apps whose size varies with device has the highest number average app installs.
-The apps whose size is greater than 90 MB has the highest number of average user reviews, i.e., they are more popular than the rest.
-Helix Jump has the highest number of positive reviews and Angry Birds Classic has the highest number of negative reviews.
------------------------------------------------------
+Analyzed distributions of installs, ratings, size, price
 
-💶 Credits
+Category-wise comparison (e.g., free vs. paid apps, most reviewed categories)
+
+Visualized trends using bar plots, pie charts, histograms, and heatmaps
+
+Sentiment Analysis (Basic)
+
+Reviewed available sentiment labels in User Reviews
+
+Couldn’t go deeper due to 42% missing data in review sentiments
+
+Key Insights and Interpretation
+
+Identified top-performing categories, free/paid app patterns, app size impact, etc.
+
+Summarized findings to help developers improve app design and user experience
+
+Conclusion and Future Scope
+
+Concluded with actionable insights
+
+Highlighted scope for future work using ML and deeper sentiment analysis
+
+## 🛠 Challenges Faced:
+Major challenge was cleaning and merging two datasets with many NaN and duplicate values.
+13.6% of reviews were missing, and 42% of User Reviews contained NaNs, limiting sentiment analysis.
+Only 816 apps were common between the two datasets (~10% overlap), restricting deeper correlation studies.
+Many features like "Current Version" and "Android Version" remain unexplored and can be studied further.
+App size and version may correlate with installs—worth deeper investigation.
+ML models were not applied; however, they are identified as potential future work.
+Visualizing trends and presenting them clearly was a key part of this analysis.
+
+## 📈 Conclusion
+EDA on the Play Store dataset revealed the following key findings:
+~92% of apps are free; developers should focus on free apps to increase reach.
+~82% of apps are suitable for all age groups.
+“Family” is the most competitive category; “Game” and “Communication” dominate in installs.
+Categories like Beauty, Parenting, and Events are underdeveloped but show good potential.
+Apps over 90MB receive the most reviews, suggesting larger apps may attract more user engagement.
+Developers should update apps frequently and optimize size, especially for paid versions.
+Game and Family categories have more negative reviews; require careful UX planning.
+Helix Jump leads in positive reviews, while Angry Birds Classic leads in negative feedback.
+Minecraft is the most successful paid app with over 10M installs and high revenue from purchases.
+Finance apps have the highest average installation fee among paid apps.
+
+## 💶 Credits
 Contact me for Data Science Project Collaborations
 
-GitHub LinkedIn
+## Connect with me
+
+[![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Sandip2512)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sandip-salunkhe-6881b5240/)
 
 -----------------------------------------------------
 
-📚 References
+## 📚 References
 GeeksforGeeks
 Analytics Vidhya
 Stackoverflow
@@ -155,9 +151,8 @@ Python libraries documentation
 Data camp
 -----------------------------------------------------
 
-📜 Feedback
+## 📜 Feedback
 Play Store App Review Analysis
-PPT Presentation Link
-If you have any feedback, please reach out to us at sandeepskm13@gmail.com
+If you have any feedback, please reach out to us at salunkhesandip2512@gmail.com
 
------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
