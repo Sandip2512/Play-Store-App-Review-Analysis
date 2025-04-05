@@ -1,13 +1,17 @@
-# Play Store App Review Analysis
+
+<h1 align="center">Play Store App Review Analysis</h1>
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<p align="center">
+  <a href="https://www.almabetter.com/courses/full-stack-data-science">
+    <img src="https://img.shields.io/badge/Verified-AlmaBetter-blue" alt="AlmaBetter Badge"/>
+  </a>
+</p>
 
-
-[![AlmaBetter](https://img.shields.io/badge/Verified-AlmaBetter-blue)](https://www.almabetter.com/courses/full-stack-data-science)
 <p align="center">
   <img src="https://github.com/Sandip2512/Play-Store-App-Review-Analysis/blob/main/google%20play.gif?raw=true" alt="Google Play Logo" width="300"/>
 </p>
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## 📋 Abstract
 This project presents an Exploratory Data Analysis (EDA) of Google Play Store apps and user reviews to understand key trends, user preferences, and app performance. The primary goal is to analyze the available app metadata and user sentiment to provide actionable insights for developers. The study addresses challenges like data inconsistencies, missing values, and limited overlap between datasets. Despite these, valuable patterns were uncovered, such as the dominance of free apps, popular categories, and user behavior around app size and ratings. This analysis lays a foundation for developers to make informed decisions when designing, pricing, and positioning apps in a highly competitive market.
@@ -30,26 +34,33 @@ Dataset - Dataset taken from Almabetter
 ## 📖 Introduction:
 Google Play Store hosts millions of Android applications across diverse categories. With user reviews, install counts, and app attributes readily available, it becomes essential to analyze this data to gain meaningful insights into user behavior and app performance. This project focuses on performing EDA to identify trends in app ratings, categories, sizes, and user feedback, all of which help developers better understand the market landscape.
 
-The contents of Play Store Data are:
-App: It contains the name of the app with a short description (optional).
-Category: This section gives the category to which an app belongs. In this dataset, the apps are divided among 33 categories.
-Size: The disk space required to install the respective app.
-Rating: The average rating given by the users for the respective app. It can be in between 1 and 5.
-Reviews: The number of users that have dropped a review for the respective app.
-Installs: The approximate number of times the respective app was installed.
-Type: It states whether an app is free to use or paid.
-Price: It gives the price payable to install the app. For free type apps, the price is zero.
-Content rating: It states which age group is suitable to consume the content of the respective app.
-Genres: It gives the genre(s) to which the respective app belongs.
-Last updated: It gives the day in which the latest update for the respective app was released.
-Current Ver: It gives the current version of the respective app.
-Android Ver: It gives the android version of the respective app.
-The contents of User Reviews are:
-App: It contains the name of the app with a short description (optional).
-Translated_Review: It contains the English translation of the review dropped by the user of the app.
-Sentiment: It gives the attitude/emotion of the writer. It can be ‘Positive’, ‘Negative’, or ‘Neutral’.
-Sentiment_Polarity: It gives the polarity of the review. Its range is [-1,1], where 1 means ‘Positive statement’ and -1 means a ‘Negative statement’.
-Sentiment_Subjectivity: This value gives how close a reviewer’s opinion is to the opinion of the general public. Its range is [0,1]. Higher the subjectivity, closer is the reviewer’s opinion to the opinion of the general public, and lower subjectivity indicates the review is more of a factual information.
+## 📦 Contents of the Play Store Data & User Reviews:
+The dataset is composed of two main files – one containing app-level information from the Google Play Store, and the other containing user-generated reviews.
+
+1. Play Store Dataset:
+This dataset contains metadata for each app, including:
+App: Name of the application
+Category: Category the app belongs to (e.g., Tools, Games, Finance)
+Rating: Average user rating of the app
+Reviews: Total number of user reviews
+Size: Size of the app (in MB or marked as 'Varies with device')
+Installs: Number of times the app has been installed
+Type: Free or Paid
+Price: Price of the app (if Paid)
+Content Rating: Age group suitability
+Genres: Genres the app belongs to
+Last Updated: Last update date
+Current Ver: Current version of the app
+Android Ver: Minimum Android version required
+
+2. User Reviews Dataset:
+This dataset contains user feedback for apps and includes:
+App: Name of the application
+Translated_Review: The review text (translated to English)
+Sentiment: Label indicating if the review is Positive, Negative, or Neutral
+Sentiment_Polarity: A score between -1 (negative) and 1 (positive)
+Sentiment_Subjectivity: A score between 0 (objective) and 1 (subjective), indicating how opinion-based the review is
+
 -----------------------------------------------------
 
 ## 📋Problem Statements
